@@ -38,10 +38,7 @@ body {
   pointer-events: none;
   z-index: -1;
   opacity: 0;
-  width: 48px;
-  height: 48px;
-  left: 0;
-  top: 0;
+  inset: 0;
 }
 
 /* ::before = top-left + top-right corners */
@@ -57,7 +54,27 @@ body {
     linear-gradient(#FF8C00, #FF8C00) 100% 100% / 1.5px 8px no-repeat;
 }
 
+/* Inset-based bounce for rectangular cards (adapts to card shape) */
 @keyframes corner-bounce-in {
+  0%   { opacity: 0; inset: 0;
+         background-size: 8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px,
+                          8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px; }
+  50%  { opacity: 1; inset: -20px;
+         background-size: 22px 2px, 2px 22px, 22px 2px, 2px 22px,
+                          22px 2px, 2px 22px, 22px 2px, 2px 22px; }
+  70%  { inset: -12px;
+         background-size: 16px 2px, 2px 16px, 16px 2px, 2px 16px,
+                          16px 2px, 2px 16px, 16px 2px, 2px 16px; }
+  85%  { inset: -18px;
+         background-size: 20px 2px, 2px 20px, 20px 2px, 2px 20px,
+                          20px 2px, 2px 20px, 20px 2px, 2px 20px; }
+  100% { opacity: 1; inset: -16px;
+         background-size: 18px 2px, 2px 18px, 18px 2px, 2px 18px,
+                          18px 2px, 2px 18px, 18px 2px, 2px 18px; }
+}
+
+/* Fixed-size bounce for stack containers (no intrinsic dimensions) */
+@keyframes corner-bounce-in-fixed {
   0%   { opacity: 0; left: 0; top: 0; width: 48px; height: 48px;
          background-size: 8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px,
                           8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px; }
@@ -77,6 +94,18 @@ body {
 
 .card-hover-corners:hover::before {
   animation: corner-bounce-in 0.5s ease-out forwards;
+}
+
+/* Stack containers: override to fixed dimensions (no intrinsic size) */
+#stack-io::before, #stack-sdks::before, #stack-stt::before, #stack-llm::before, #stack-tts::before {
+  inset: auto;
+  width: 48px;
+  height: 48px;
+  left: 0;
+  top: 0;
+}
+#stack-io:hover::before, #stack-sdks:hover::before, #stack-stt:hover::before, #stack-llm:hover::before, #stack-tts:hover::before {
+  animation: corner-bounce-in-fixed 0.5s ease-out forwards;
 }
 
 /* Not needed — single pseudo handles all 4 corners */
@@ -137,7 +166,7 @@ body {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.label-push:active {
+.label-push:hover {
   transform: translateY(2px) !important;
   box-shadow: -1px 1px 0px 0px rgba(255, 140, 0, 0.25) !important;
 }
