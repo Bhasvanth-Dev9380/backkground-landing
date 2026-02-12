@@ -9,12 +9,12 @@ export default function Home() {
             <div className="space-y-2 text-[#222]">
               <div className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#222]">Developer platform</div>
               <h2 className="z-20 text-pretty text-3xl font-light tracking-tight lg:text-4xl">
-                <span>The </span>
-                <span style={{ opacity: 1, color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.6) 0px 0px 12px)" }}>complete </span>
-                <span>stack </span>
-                <span>for </span>
-                <span>Voice </span>
-                <span>AI </span>
+                <span className="word-animate" style={{ animationDelay: "0s" }}>The </span>
+                <span className="word-animate" style={{ animationDelay: "0.1s", color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.6) 0px 0px 12px)" }}>complete </span>
+                <span className="word-animate" style={{ animationDelay: "0.2s" }}>stack </span>
+                <span className="word-animate" style={{ animationDelay: "0.3s" }}>for </span>
+                <span className="word-animate" style={{ animationDelay: "0.4s" }}>Voice </span>
+                <span className="word-animate" style={{ animationDelay: "0.5s" }}>AI </span>
               </h2>
             </div>
             <div className="relative z-10 flex flex-col items-start gap-0 py-8 md:py-12">
@@ -221,7 +221,7 @@ export default function Home() {
             </div>
 
             {/* I/O Node Stack */}
-            <div className="relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-io" className="relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>I/O</span>
@@ -267,7 +267,7 @@ export default function Home() {
             </div>
 
             {/* SDKs Node Stack */}
-            <div className="relative absolute top-[290px] left-[calc(50%+118px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-sdks" className="relative absolute top-[290px] left-[calc(50%+118px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>SDKs</span>
@@ -304,7 +304,7 @@ export default function Home() {
             </div>
 
             {/* STT Node Stack */}
-            <div className="relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-stt" className="relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>STT</span>
@@ -341,7 +341,7 @@ export default function Home() {
             </div>
 
             {/* LLM Node Stack */}
-            <div className="relative absolute top-[660px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-llm" className="relative absolute top-[660px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>LLM</span>
@@ -394,7 +394,7 @@ export default function Home() {
             </div>
 
             {/* TTS Node Stack */}
-            <div className="relative absolute top-[520px] left-[calc(50%+365px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-tts" className="relative absolute top-[520px] left-[calc(50%+365px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>TTS</span>
@@ -505,7 +505,17 @@ export default function Home() {
                 </span>
               </a>
               <svg className="pointer-events-none absolute top-0 left-0 h-full w-full">
-                <path d="M298,1 L592,1 Q596,1 596,5 L596,293 Q596,297 592,297 L5,297 Q1,297 1,293 L1,5 Q1,1 5,1 L298,1" stroke="rgba(0,0,0,0.12)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
+                <defs>
+                  <linearGradient id="_r_j3_" gradientUnits="objectBoundingBox" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0, 0.5, 0.5)">
+                    <stop offset="0%" stopColor="rgba(255,140,0,0.15)" />
+                    <stop offset="20%" stopColor="rgba(255,140,0,0.15)" />
+                    <stop offset="50%" stopColor="#FF8C00" />
+                    <stop offset="80%" stopColor="rgba(255,140,0,0.15)" />
+                    <stop offset="100%" stopColor="rgba(255,140,0,0.15)" />
+                    <animateTransform attributeName="gradientTransform" type="translate" additive="sum" begin="0s" from="-3 0" to="3 0" dur="4s" repeatCount="indefinite" restart="whenNotActive" />
+                  </linearGradient>
+                </defs>
+                <path d="M298,1 L592,1 Q596,1 596,5 L596,293 Q596,297 592,297 L5,297 Q1,297 1,293 L1,5 Q1,1 5,1 L298,1" stroke="url(#_r_j3_)" strokeWidth="1.5" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
               </svg>
             </div>
 
