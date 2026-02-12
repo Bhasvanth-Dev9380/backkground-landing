@@ -227,7 +227,7 @@ export default function Home() {
                   <span style={{ opacity: 1 }}>I/O</span>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 1, zIndex: 10, transform: "translateY(0px) translateX(0px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
@@ -237,7 +237,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 100, transform: "translateY(-8px) translateX(32px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
@@ -246,7 +246,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: -1, transform: "translateY(20px) translateX(-20px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
@@ -255,7 +255,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0.8, zIndex: 0, transform: "translateY(8px) translateX(-8px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
@@ -273,28 +273,28 @@ export default function Home() {
                   <span style={{ opacity: 1 }}>SDKs</span>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 1, zIndex: 10, transform: "translateY(0px) translateX(0px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img width="20" height="20" alt="Swift Logo" src="/logos/square/swift.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 100, transform: "translateY(-8px) translateX(32px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img width="20" height="20" alt="Flutter Logo" src="/logos/square/flutter.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: -1, transform: "translateY(20px) translateX(-20px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img width="20" height="20" alt="React Logo" src="/logos/square/react-native.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0.8, zIndex: 0, transform: "translateY(8px) translateX(-8px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img width="20" height="20" alt="Python Logo" src="/logos/square/python.svg" />
@@ -310,28 +310,28 @@ export default function Home() {
                   <span style={{ opacity: 1 }}>STT</span>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 10, transform: "translateY(-8px) translateX(32px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Deepgram Logo" className="h-6 w-6" src="/logos/square/deepgram.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 100, transform: "translateY(20px) translateX(-20px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="OpenAI Logo" className="h-6 w-6" src="/logos/square/open-ai.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0.8, zIndex: -1, transform: "translateY(8px) translateX(-8px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Groq Logo" className="h-6 w-6" src="/logos/square/groq.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 1, zIndex: 0, transform: "translateY(0px) translateX(0px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Google Logo" className="h-6 w-6" src="/logos/square/google.svg" />
@@ -347,28 +347,28 @@ export default function Home() {
                   <span style={{ opacity: 1 }}>LLM</span>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 1, zIndex: 10, transform: "translateY(0px) translateX(0px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="OpenAI Logo" className="h-6 w-6" src="/logos/square/open-ai.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 100, transform: "translateY(-8px) translateX(32px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Google Logo" className="h-6 w-6" src="/logos/square/google.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: -1, transform: "translateY(20px) translateX(-20px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Cerebras Logo" className="h-6 w-6" src="/logos/square/cerebras.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0.8, zIndex: 0, transform: "translateY(8px) translateX(-8px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Perplexity Logo" className="h-6 w-6" src="/logos/square/perplexity.svg" />
@@ -400,28 +400,28 @@ export default function Home() {
                   <span style={{ opacity: 1 }}>TTS</span>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 10, transform: "translateY(-8px) translateX(32px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Cartesia Logo" className="h-6 w-6" src="/logos/square/cartesia.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0, zIndex: 100, transform: "translateY(20px) translateX(-20px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="ElevenLabs Logo" className="h-6 w-6" src="/logos/square/elevenlabs.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 0.8, zIndex: -1, transform: "translateY(8px) translateX(-8px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Deepgram Logo" className="h-6 w-6" src="/logos/square/deepgram.svg" />
                   </div>
                 </div>
               </div>
-              <div className="absolute" style={{ opacity: 1, zIndex: 0, transform: "translateY(0px) translateX(0px)" }}>
+              <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                     <img alt="Groq Logo" className="h-6 w-6" src="/logos/square/groq.svg" />
