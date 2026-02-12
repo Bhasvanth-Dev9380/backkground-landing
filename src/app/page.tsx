@@ -79,7 +79,7 @@ export default function Home() {
             <img className="absolute top-0 left-0 object-none" alt="Grid" src="/images/home/hero-grid.svg" style={{ opacity: 1 }} />
 
             {/* User icon card */}
-            <div className="absolute top-[297px] left-[calc(50%-89px)] z-20 flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+            <div className="absolute top-[297px] left-[calc(50%-89px)] z-20 flex h-12 w-12 items-center justify-center card-hover-corners rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5 text-[#FF8C00]">
                   <path d="M12 2C9.51472 2 7.5 4.01472 7.5 6.5C7.5 8.98528 9.51472 11 12 11C14.4853 11 16.5 8.98528 16.5 6.5C16.5 4.01472 14.4853 2 12 2Z" fill="currentColor" />
@@ -221,7 +221,7 @@ export default function Home() {
             </div>
 
             {/* I/O Node Stack */}
-            <div id="stack-io" className="relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-io" className="card-hover-corners relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>I/O</span>
@@ -267,7 +267,7 @@ export default function Home() {
             </div>
 
             {/* SDKs Node Stack */}
-            <div id="stack-sdks" className="relative absolute top-[290px] left-[calc(50%+118px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-sdks" className="card-hover-corners relative absolute top-[290px] left-[calc(50%+118px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>SDKs</span>
@@ -304,7 +304,7 @@ export default function Home() {
             </div>
 
             {/* STT Node Stack */}
-            <div id="stack-stt" className="relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-stt" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>STT</span>
@@ -341,7 +341,7 @@ export default function Home() {
             </div>
 
             {/* LLM Node Stack */}
-            <div id="stack-llm" className="relative absolute top-[660px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-llm" className="card-hover-corners relative absolute top-[660px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>LLM</span>
@@ -378,7 +378,7 @@ export default function Home() {
             </div>
 
             {/* Database card */}
-            <div className="absolute top-[792px] left-[calc(50%+258px)] z-20 flex h-[50px] w-[50px] items-center justify-center rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+            <div className="absolute top-[792px] left-[calc(50%+258px)] z-20 flex h-[50px] w-[50px] items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5 text-[#FF8C00]">
                   <path fillRule="evenodd" clipRule="evenodd" d="M20 5.14C20 4.57 19.67 4.09 19.23 3.73C18.79 3.36 18.18 3.05 17.47 2.8C16.05 2.3 14.11 2 12 2C9.89 2 7.95 2.3 6.53 2.8C5.82 3.05 5.21 3.36 4.77 3.73C4.33 4.09 4 4.57 4 5.14V9.24C4 9.45 4.12 9.71 4.49 10.02C4.86 10.33 5.42 10.62 6.16 10.88C7.63 11.4 9.7 11.73 12 11.73C14.3 11.73 16.37 11.4 17.84 10.88C18.58 10.62 19.14 10.32 19.51 10.02C19.88 9.71 20 9.45 20 9.24V5.14ZM5.41 4.5C5.73 4.24 6.22 3.98 6.86 3.75C8.15 3.3 9.97 3.01 12 3.01C14.03 3.01 15.85 3.3 17.14 3.75C17.79 3.98 18.28 4.24 18.59 4.5C18.91 4.77 19 4.99 19 5.14C19 5.29 18.91 5.52 18.59 5.78C18.27 6.04 17.78 6.3 17.14 6.53C15.85 6.98 14.03 7.27 12 7.27C9.97 7.27 8.15 6.98 6.86 6.53C6.21 6.3 5.72 6.04 5.41 5.78C5.09 5.51 5 5.29 5 5.14C5 4.99 5.09 4.76 5.41 4.5ZM18.18 11.83C18.9 11.58 19.53 11.27 20 10.91V13.49C20 13.7 19.88 13.96 19.51 14.27C19.14 14.58 18.58 14.87 17.84 15.13C16.37 15.65 14.3 15.98 12 15.98C9.7 15.98 7.63 15.65 6.16 15.13C5.42 14.87 4.86 14.57 4.49 14.27C4.12 13.96 4 13.7 4 13.49V10.91C4.48 11.27 5.1 11.57 5.82 11.83C7.42 12.39 9.61 12.73 12 12.73C14.39 12.73 16.57 12.39 18.18 11.83ZM18.18 16.08C18.9 15.83 19.53 15.52 20 15.16V18.86C20 19.43 19.67 19.91 19.23 20.27C18.79 20.64 18.18 20.95 17.47 21.2C16.05 21.7 14.11 22 12 22C9.89 22 7.95 21.7 6.53 21.2C5.82 20.95 5.21 20.64 4.77 20.27C4.33 19.9 4 19.43 4 18.86V15.16C4.48 15.52 5.1 15.82 5.82 16.08C7.42 16.64 9.61 16.98 12 16.98C14.39 16.98 16.57 16.64 18.18 16.08Z" fill="currentColor" />
@@ -387,14 +387,14 @@ export default function Home() {
             </div>
 
             {/* Business Logic card */}
-            <div className="absolute top-[600px] left-[calc(50%+300px)] z-20 flex items-center justify-center rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+            <div className="absolute top-[600px] left-[calc(50%+300px)] z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <img alt="Business Logic" className="h-[115px] w-[149px]" src="/images/home/tile-business-logic.svg" />
               </div>
             </div>
 
             {/* TTS Node Stack */}
-            <div id="stack-tts" className="relative absolute top-[520px] left-[calc(50%+365px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-tts" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+365px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>TTS</span>
@@ -435,17 +435,17 @@ export default function Home() {
               <div className="absolute inset-0" style={{ maskImage: "linear-gradient(90deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.2) 60%,rgba(0,0,0,0.2) 100%)", WebkitMaskImage: "linear-gradient(90deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.2) 60%,rgba(0,0,0,0.2) 100%)", maskPosition: "-35.25px 0px", maskSize: "250px 150px" }}>
                 <img alt="Map" className="h-full w-full" src="/images/map.png" />
               </div>
-              <div className="relative z-20 flex items-center justify-center rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+              <div className="relative z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                   <div className="flex items-center justify-center" style={{ opacity: 1 }}>Media server</div>
                 </div>
               </div>
-              <div className="relative z-20 flex items-center justify-center rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+              <div className="relative z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                   <div className="flex items-center justify-center" style={{ opacity: 1 }}>Agent server</div>
                 </div>
               </div>
-              <div className="absolute -top-[70px] left-1 z-0 flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+              <div className="absolute -top-[70px] left-1 z-0 flex h-12 w-12 items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#FF8C00]" role="img" aria-label="LiveKit wordmark">
                     <path d="M14.4004 9.59961H9.59961V14.4004H14.4004V9.59961Z" fill="currentColor" />
@@ -465,7 +465,7 @@ export default function Home() {
             </div>
 
             {/* Noise cancellation card */}
-            <div className="absolute top-[470px] left-[calc(50%+160px)] z-20 flex items-center justify-center rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+            <div className="absolute top-[470px] left-[calc(50%+160px)] z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <div className="flex items-center justify-center" style={{ opacity: 1 }}>
                   <div className="mr-1">
@@ -479,7 +479,7 @@ export default function Home() {
             </div>
 
             {/* Semantic turn detection card */}
-            <div className="absolute top-[600px] left-[calc(50%+30px)] z-20 flex items-center justify-center rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+            <div className="absolute top-[600px] left-[calc(50%+30px)] z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <div className="flex items-center justify-center" style={{ opacity: 1 }}>
                   <div className="mr-1">

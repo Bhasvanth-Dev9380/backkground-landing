@@ -26,6 +26,64 @@ body {
   75%, 95% { opacity: 0.8; z-index: 0;   transform: translateY(8px) translateX(-8px); }
 }
 
+/* ── Corner marks on hover ── */
+.card-hover-corners {
+  overflow: visible;
+}
+
+.card-hover-corners::before,
+.card-hover-corners::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  left: 0;
+  top: 0;
+}
+
+/* ::before = top-left + top-right corners */
+.card-hover-corners::before {
+  background:
+    linear-gradient(#FF8C00, #FF8C00) 0 0 / 8px 1.5px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 0 0 / 1.5px 8px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 100% 0 / 8px 1.5px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 100% 0 / 1.5px 8px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 0 100% / 8px 1.5px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 0 100% / 1.5px 8px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 100% 100% / 8px 1.5px no-repeat,
+    linear-gradient(#FF8C00, #FF8C00) 100% 100% / 1.5px 8px no-repeat;
+}
+
+@keyframes corner-bounce-in {
+  0%   { opacity: 0; left: 0; top: 0; width: 48px; height: 48px;
+         background-size: 8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px,
+                          8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px; }
+  50%  { opacity: 1; left: -24px; top: -24px; width: 96px; height: 96px;
+         background-size: 22px 2px, 2px 22px, 22px 2px, 2px 22px,
+                          22px 2px, 2px 22px, 22px 2px, 2px 22px; }
+  70%  { left: -16px; top: -16px; width: 80px; height: 80px;
+         background-size: 16px 2px, 2px 16px, 16px 2px, 2px 16px,
+                          16px 2px, 2px 16px, 16px 2px, 2px 16px; }
+  85%  { left: -22px; top: -22px; width: 92px; height: 92px;
+         background-size: 20px 2px, 2px 20px, 20px 2px, 2px 20px,
+                          20px 2px, 2px 20px, 20px 2px, 2px 20px; }
+  100% { opacity: 1; left: -20px; top: -20px; width: 88px; height: 88px;
+         background-size: 18px 2px, 2px 18px, 18px 2px, 2px 18px,
+                          18px 2px, 2px 18px, 18px 2px, 2px 18px; }
+}
+
+.card-hover-corners:hover::before {
+  animation: corner-bounce-in 0.5s ease-out forwards;
+}
+
+/* Not needed — single pseudo handles all 4 corners */
+.card-hover-corners::after {
+  display: none;
+}
+
 /* I/O stack */
 #stack-io > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }
 #stack-io > div:nth-child(2) { animation-delay: 0s; }
@@ -71,6 +129,17 @@ body {
   display: inline-block;
   opacity: 0;
   animation: word-reveal 0.5s ease-out forwards;
+}
+
+/* ── Label push-down click effect ── */
+.label-push {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.label-push:active {
+  transform: translateY(2px) !important;
+  box-shadow: -1px 1px 0px 0px rgba(255, 140, 0, 0.25) !important;
 }
 
 /* ── Card border sweep (Agents Framework) ── */
