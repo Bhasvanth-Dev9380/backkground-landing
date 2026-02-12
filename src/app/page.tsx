@@ -7,14 +7,14 @@ export default function Home() {
         <div className="mx-auto w-full max-w-7xl">
           <div className="max-w-md">
             <div className="space-y-2 text-[#222]">
-              <div className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#222]">Developer platform</div>
+              <div className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#222]">AI Ecosystem</div>
               <h2 className="z-20 text-pretty text-3xl font-light tracking-tight lg:text-4xl">
                 <span className="word-animate" style={{ animationDelay: "0s" }}>The </span>
-                <span className="word-animate" style={{ animationDelay: "0.1s", color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.6) 0px 0px 12px)" }}>complete </span>
+                <span className="word-animate" style={{ animationDelay: "0.1s", color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.6) 0px 0px 12px)" }}>intelligent </span>
                 <span className="word-animate" style={{ animationDelay: "0.2s" }}>stack </span>
                 <span className="word-animate" style={{ animationDelay: "0.3s" }}>for </span>
-                <span className="word-animate" style={{ animationDelay: "0.4s" }}>Voice </span>
-                <span className="word-animate" style={{ animationDelay: "0.5s" }}>AI </span>
+                <span className="word-animate" style={{ animationDelay: "0.4s" }}>AI </span>
+                <span className="word-animate" style={{ animationDelay: "0.5s" }}>Agents </span>
               </h2>
             </div>
             <div className="relative z-10 flex flex-col items-start gap-0 py-8 md:py-12">
@@ -25,7 +25,7 @@ export default function Home() {
                       <path d="M9.75 20.25L14.25 3.75M18.25 7.75L22.25 12L18.25 16.25M5.75 16.25L1.75 12L5.75 7.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
                     </svg>
                   </span>
-                  <span>Open source framework to build and test agents</span>
+                  <span>Modular framework to build and deploy AI agents</span>
                 </div>
               </div>
               <div className="relative">
@@ -35,7 +35,7 @@ export default function Home() {
                       <path d="M8.75 13.75C10.5449 13.75 12 15.2051 12 17M15.25 10.25C13.4551 10.25 12 8.79493 12 7M12 3.65628V20.1132M19.0167 17.8991C20.3271 17.3617 21.25 16.0734 21.25 14.5694C21.25 13.5629 20.8366 12.6529 20.1703 12C20.8366 11.3471 21.25 10.4371 21.25 9.43056C21.25 7.57553 19.8459 6.04846 18.0425 5.8542C17.5934 4.07047 15.9787 2.75 14.0556 2.75C13.3067 2.75 12.6047 2.9502 12 3.29999C11.3953 2.9502 10.6933 2.75 9.94444 2.75C8.02133 2.75 6.40662 4.07047 5.95754 5.8542C4.15413 6.04846 2.75 7.57553 2.75 9.43056C2.75 10.4371 3.16341 11.3471 3.82969 12C3.16341 12.6529 2.75 13.5629 2.75 14.5694C2.75 16.0734 3.67291 17.3617 4.98327 17.8991C5.5365 19.8338 7.31815 21.25 9.43056 21.25C10.3813 21.25 11.2651 20.9631 12 20.4712C12.7349 20.9631 13.6187 21.25 14.5694 21.25C16.6819 21.25 18.4635 19.8338 19.0167 17.8991Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
                     </svg>
                   </span>
-                  <span>Inference gateway to access TTS, LLM, and STT models</span>
+                  <span>Unified gateway for NLU, LLM, and generative models</span>
                 </div>
               </div>
               <div className="relative">
@@ -45,7 +45,7 @@ export default function Home() {
                       <path d="M17.125 19.25H8.925C4.96236 19.25 1.75 16.0041 1.75 12C1.75 7.99594 4.96236 4.75 8.925 4.75C11.8865 4.75 14.4289 6.56294 15.5245 9.15037C16.0281 8.98326 16.5661 8.89286 17.125 8.89286C19.9555 8.89286 22.25 11.2114 22.25 14.0714C22.25 16.9315 19.9555 19.25 17.125 19.25Z" stroke="currentColor" strokeWidth="1.5" />
                     </svg>
                   </span>
-                  <span>Cloud platform for deploying and scaling agents</span>
+                  <span>Managed cloud for scaling agents across regions</span>
                 </div>
               </div>
               <div className="relative">
@@ -55,7 +55,7 @@ export default function Home() {
                       <path d="M8.90625 3.75H3.75V5.8125C3.75 13.7861 10.2139 20.25 18.1875 20.25H20.25V15.0938L16.125 13.0312L14.5781 14.5781C12 13.5469 10.4531 12 9.42188 9.42188L10.9688 7.875L8.90625 3.75Z" stroke="currentColor" strokeWidth="1.5" />
                     </svg>
                   </span>
-                  <span>Phone numbers and SIP integrations for telephony</span>
+                  <span>Multi-channel connectors for web, voice, and APIs</span>
                 </div>
               </div>
               <div className="relative">
@@ -65,7 +65,7 @@ export default function Home() {
                       <path d="M3.75 9.25H9.25V3.75H3.75V9.25ZM3.75 9.25V14.75M3.75 9.25H14.75V14.75H3.75M3.75 14.75V20.25H20.25V14.75H3.75ZM3.75 1.75V22.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
                     </svg>
                   </span>
-                  <span>Full-stack observability for every agent session</span>
+                  <span>End-to-end observability for every agent session</span>
                 </div>
               </div>
             </div>
@@ -209,22 +209,22 @@ export default function Home() {
                 <path d="M1030,550 L1028,350" stroke="url(#_r_j2_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
               </svg>
 
-              {/* HTTP/Websocket pill */}
+              {/* REST/WebSocket pill */}
               <div className="absolute top-[735px] left-[calc(50%+320px)] z-20 rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                <span style={{ opacity: 1 }}>HTTP/Websocket</span>
+                <span style={{ opacity: 1 }}>REST/WebSocket</span>
               </div>
 
-              {/* WebRTC pill */}
+              {/* gRPC pill */}
               <div className="absolute top-[313px] left-[calc(50%+180px)] z-20 rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                <span style={{ opacity: 1 }}>WebRTC</span>
+                <span style={{ opacity: 1 }}>gRPC</span>
               </div>
             </div>
 
-            {/* I/O Node Stack */}
-            <div id="stack-io" data-label="I/O" className="card-hover-corners relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            {/* Input Node Stack */}
+            <div id="stack-io" data-label="Input" className="card-hover-corners relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>I/O</span>
+                  <span style={{ opacity: 1 }}>Input</span>
                 </div>
               </div>
               <div className="absolute">
@@ -266,11 +266,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* SDKs Node Stack */}
-            <div id="stack-sdks" data-label="SDKs" className="card-hover-corners relative absolute top-[290px] left-[calc(50%+118px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            {/* APIs Node Stack */}
+            <div id="stack-sdks" data-label="APIs" className="card-hover-corners relative absolute top-[290px] left-[calc(50%+118px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>SDKs</span>
+                  <span style={{ opacity: 1 }}>APIs</span>
                 </div>
               </div>
               <div className="absolute">
@@ -303,11 +303,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* STT Node Stack */}
-            <div id="stack-stt" data-label="STT" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            {/* NLU Node Stack */}
+            <div id="stack-stt" data-label="NLU" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>STT</span>
+                  <span style={{ opacity: 1 }}>NLU</span>
                 </div>
               </div>
               <div className="absolute">
@@ -393,11 +393,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* TTS Node Stack */}
-            <div id="stack-tts" data-label="TTS" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+365px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            {/* Gen Node Stack */}
+            <div id="stack-tts" data-label="Gen" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+365px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>TTS</span>
+                  <span style={{ opacity: 1 }}>Gen</span>
                 </div>
               </div>
               <div className="absolute">
@@ -430,41 +430,37 @@ export default function Home() {
               </div>
             </div>
 
-            {/* LiveKit Cloud box */}
+            {/* Spinabot Cloud box */}
             <div className="absolute top-[268px] left-[1043px] flex h-[150px] w-[250px] flex-col items-center justify-center gap-2 rounded border border-dashed border-[#E8A020] bg-white transition-colors">
               <div className="absolute inset-0" style={{ maskImage: "linear-gradient(90deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.2) 60%,rgba(0,0,0,0.2) 100%)", WebkitMaskImage: "linear-gradient(90deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.2) 60%,rgba(0,0,0,0.2) 100%)", maskPosition: "-35.25px 0px", maskSize: "250px 150px" }}>
                 <img alt="Map" className="h-full w-full" src="/images/map.png" />
               </div>
               <div className="relative z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                  <div className="flex items-center justify-center" style={{ opacity: 1 }}>Media server</div>
+                  <div className="flex items-center justify-center" style={{ opacity: 1 }}>Orchestrator</div>
                 </div>
               </div>
               <div className="relative z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                  <div className="flex items-center justify-center" style={{ opacity: 1 }}>Agent server</div>
+                  <div className="flex items-center justify-center" style={{ opacity: 1 }}>Agent runtime</div>
                 </div>
               </div>
-              <div data-label="LiveKit" className="absolute -top-[70px] left-1 z-0 flex h-12 w-12 items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+              <div data-label="Spina" className="absolute -top-[70px] left-1 z-0 flex h-12 w-12 items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#FF8C00]" role="img" aria-label="LiveKit wordmark">
-                    <path d="M14.4004 9.59961H9.59961V14.4004H14.4004V9.59961Z" fill="currentColor" />
-                    <path d="M19.2011 4.80078H14.4004V9.60153H19.2011V4.80078Z" fill="currentColor" />
-                    <path d="M19.2011 14.4004H14.4004V19.2011H19.2011V14.4004Z" fill="currentColor" />
-                    <path d="M24 0H19.1992V4.80075H24V0Z" fill="currentColor" />
-                    <path d="M24 19.1992H19.1992V24H24V19.1992Z" fill="currentColor" />
-                    <path d="M4.80075 19.1992V14.4004V9.59962V4.80075V0H0V4.80075V9.59962V14.4004V19.1992V24H4.80075H9.59963H14.4004V19.1992H9.59963H4.80075Z" fill="#FF8C00" />
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#FF8C00]" role="img" aria-label="Spinabot logo">
+                    <circle cx="12" cy="12" r="4" fill="currentColor" />
+                    <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5.64 5.64l2.83 2.83M15.54 15.54l2.83 2.83M5.64 18.36l2.83-2.83M15.54 8.46l2.83-2.83" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
                 </div>
               </div>
               <div className="absolute -top-4 -left-5">
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>LiveKit Cloud</span>
+                  <span style={{ opacity: 1 }}>Spinabot Cloud</span>
                 </div>
               </div>
             </div>
 
-            {/* Noise cancellation card */}
+            {/* Intent detection card */}
             <div className="absolute top-[470px] left-[calc(50%+160px)] z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <div className="flex items-center justify-center" style={{ opacity: 1 }}>
@@ -473,12 +469,12 @@ export default function Home() {
                       <path d="M7.75 3.75V20.25M3.75 9.75V14.25M12 7.75V16.25M16.25 5.75V18.25M20.25 9.75V14.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
                     </svg>
                   </div>
-                  Noise cancellation
+                  Intent detection
                 </div>
               </div>
             </div>
 
-            {/* Semantic turn detection card */}
+            {/* Context memory card */}
             <div className="absolute top-[600px] left-[calc(50%+30px)] z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] px-3 py-1.5 text-xs text-[#333] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
                 <div className="flex items-center justify-center" style={{ opacity: 1 }}>
@@ -489,16 +485,16 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  Semantic turn detection
+                  Context memory
                 </div>
               </div>
             </div>
 
-            {/* Agents Framework box */}
+            {/* Spinabot Engine box */}
             <div className="absolute top-[450px] left-[calc(50%-95px)] z-[5] flex h-[300px] w-[597px] px-3 py-2" style={{ opacity: 1, backgroundColor: "rgba(247, 247, 247, 0.85)", backdropFilter: "blur(6px)" }}>
-              <a href="https://docs.livekit.io/agents" target="_blank" rel="noopener noreferrer" className="group h-fit self-start text-[#555] hover:text-[#FF8C00] hover:underline">
+              <a href="#" className="group h-fit self-start text-[#555] hover:text-[#FF8C00] hover:underline">
                 <span className="flex gap-1 font-mono text-xs uppercase tracking-widest" style={{ opacity: 1 }}>
-                  Agents Framework
+                  Spinabot Engine
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-4 w-4 text-[#999] group-hover:text-[#FF8C00]">
                     <path d="M18.25 15.25V5.75H8.75M6 18L17.6002 6.39983" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
                   </svg>

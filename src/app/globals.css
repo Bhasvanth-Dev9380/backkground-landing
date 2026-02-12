@@ -126,17 +126,17 @@ body {
   100% { content: attr(data-label); opacity: 1; }
 }
 
-@keyframes scramble-7 {
-  0%   { content: "━━━━━━━"; opacity: 0.4; }
-  8%   { content: "X7K◆M2R"; opacity: 0.6; }
-  16%  { content: "◇3PF◆H4"; opacity: 0.7; }
-  24%  { content: "W5JL◆T9"; opacity: 0.8; }
-  32%  { content: "R2◆FH9P"; opacity: 0.8; }
-  40%  { content: "Q3FB8◇N"; opacity: 0.85; }
-  48%  { content: "L4T9W5◆"; opacity: 0.85; }
-  56%  { content: "Z1V◇G6D"; opacity: 0.9; }
-  64%  { content: "L1V3K1T"; opacity: 0.9; }
-  72%  { content: "LIV3KIT"; opacity: 0.95; }
+@keyframes scramble-5 {
+  0%   { content: "━━━━━"; opacity: 0.4; }
+  8%   { content: "X7K◆M"; opacity: 0.6; }
+  16%  { content: "◇3PF◆"; opacity: 0.7; }
+  24%  { content: "W5JL◆"; opacity: 0.8; }
+  32%  { content: "R2◆FH"; opacity: 0.8; }
+  40%  { content: "Q3FB8"; opacity: 0.85; }
+  48%  { content: "L4T9W"; opacity: 0.85; }
+  56%  { content: "Z1V◇G"; opacity: 0.9; }
+  64%  { content: "SP1NA"; opacity: 0.9; }
+  72%  { content: "SPIN4"; opacity: 0.95; }
   80%  { content: attr(data-label); opacity: 0.95; }
   100% { content: attr(data-label); opacity: 1; }
 }
@@ -177,13 +177,13 @@ body {
 
 /* Per-label scramble animations (matched char lengths) */
 [data-label="User"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
-[data-label="LiveKit"]:hover::after    { animation: scramble-7 0.7s step-end forwards; }
+[data-label="Spina"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 [data-label="Database"]:hover::after   { animation: scramble-8 0.7s step-end forwards; }
-[data-label="I/O"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
-[data-label="SDKs"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
-[data-label="STT"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="Input"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
+[data-label="APIs"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
+[data-label="NLU"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
 [data-label="LLM"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
-[data-label="TTS"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="Gen"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
 
 /* Stack containers: fixed ::after position (no intrinsic height) */
 #stack-io[data-label]::after,

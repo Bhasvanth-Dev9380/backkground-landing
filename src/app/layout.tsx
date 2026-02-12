@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Developer Platform - The Complete Stack for Voice AI",
-  description: "Open source framework to build, deploy, and scale voice AI agents with full-stack observability.",
+  title: "Spinabot — The Intelligent Stack for AI Agents",
+  description: "Build, deploy, and scale AI agents with a modular framework, unified inference gateway, and end-to-end observability.",
 };
 
 export default function RootLayout({
