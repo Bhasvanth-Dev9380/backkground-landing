@@ -31,8 +31,7 @@ body {
   overflow: visible;
 }
 
-.card-hover-corners::before,
-.card-hover-corners::after {
+.card-hover-corners::before {
   content: '';
   position: absolute;
   pointer-events: none;
@@ -54,18 +53,12 @@ body {
     linear-gradient(#FF8C00, #FF8C00) 100% 100% / 1.5px 8px no-repeat;
 }
 
-/* Inset-based bounce for rectangular cards (adapts to card shape) */
+/* Inset-based smooth reveal for rectangular cards (adapts to card shape) */
 @keyframes corner-bounce-in {
   0%   { opacity: 0; inset: 0;
          background-size: 8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px,
                           8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px; }
-  50%  { opacity: 1; inset: -20px;
-         background-size: 22px 2px, 2px 22px, 22px 2px, 2px 22px,
-                          22px 2px, 2px 22px, 22px 2px, 2px 22px; }
-  70%  { inset: -12px;
-         background-size: 16px 2px, 2px 16px, 16px 2px, 2px 16px,
-                          16px 2px, 2px 16px, 16px 2px, 2px 16px; }
-  85%  { inset: -18px;
+  60%  { opacity: 1; inset: -18px;
          background-size: 20px 2px, 2px 20px, 20px 2px, 2px 20px,
                           20px 2px, 2px 20px, 20px 2px, 2px 20px; }
   100% { opacity: 1; inset: -16px;
@@ -73,18 +66,12 @@ body {
                           18px 2px, 2px 18px, 18px 2px, 2px 18px; }
 }
 
-/* Fixed-size bounce for stack containers (no intrinsic dimensions) */
+/* Fixed-size smooth reveal for stack containers (no intrinsic dimensions) */
 @keyframes corner-bounce-in-fixed {
   0%   { opacity: 0; left: 0; top: 0; width: 48px; height: 48px;
          background-size: 8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px,
                           8px 1.5px, 1.5px 8px, 8px 1.5px, 1.5px 8px; }
-  50%  { opacity: 1; left: -24px; top: -24px; width: 96px; height: 96px;
-         background-size: 22px 2px, 2px 22px, 22px 2px, 2px 22px,
-                          22px 2px, 2px 22px, 22px 2px, 2px 22px; }
-  70%  { left: -16px; top: -16px; width: 80px; height: 80px;
-         background-size: 16px 2px, 2px 16px, 16px 2px, 2px 16px,
-                          16px 2px, 2px 16px, 16px 2px, 2px 16px; }
-  85%  { left: -22px; top: -22px; width: 92px; height: 92px;
+  60%  { opacity: 1; left: -22px; top: -22px; width: 92px; height: 92px;
          background-size: 20px 2px, 2px 20px, 20px 2px, 2px 20px,
                           20px 2px, 2px 20px, 20px 2px, 2px 20px; }
   100% { opacity: 1; left: -20px; top: -20px; width: 88px; height: 88px;
@@ -93,7 +80,7 @@ body {
 }
 
 .card-hover-corners:hover::before {
-  animation: corner-bounce-in 0.5s ease-out forwards;
+  animation: corner-bounce-in 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 /* Stack containers: override to fixed dimensions (no intrinsic size) */
@@ -105,12 +92,113 @@ body {
   top: 0;
 }
 #stack-io:hover::before, #stack-sdks:hover::before, #stack-stt:hover::before, #stack-llm:hover::before, #stack-tts:hover::before {
-  animation: corner-bounce-in-fixed 0.5s ease-out forwards;
+  animation: corner-bounce-in-fixed 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
-/* Not needed — single pseudo handles all 4 corners */
-.card-hover-corners::after {
-  display: none;
+/* ── Scramble text reveal (per-label, matched lengths) ── */
+@keyframes scramble-3 {
+  0%   { content: "━━━"; opacity: 0.4; }
+  8%   { content: "X7K"; opacity: 0.6; }
+  16%  { content: "◇3P"; opacity: 0.7; }
+  24%  { content: "W5J"; opacity: 0.8; }
+  32%  { content: "R2◆"; opacity: 0.8; }
+  40%  { content: "Q3F"; opacity: 0.85; }
+  48%  { content: "L4T"; opacity: 0.85; }
+  56%  { content: "Z1V"; opacity: 0.9; }
+  64%  { content: "B8N"; opacity: 0.9; }
+  72%  { content: "5TT"; opacity: 0.95; }
+  80%  { content: attr(data-label); opacity: 0.95; }
+  100% { content: attr(data-label); opacity: 1; }
+}
+
+@keyframes scramble-4 {
+  0%   { content: "━━━━"; opacity: 0.4; }
+  8%   { content: "X7K◆"; opacity: 0.6; }
+  16%  { content: "◇3PF"; opacity: 0.7; }
+  24%  { content: "W5JL"; opacity: 0.8; }
+  32%  { content: "R2◆F"; opacity: 0.8; }
+  40%  { content: "Q3FB"; opacity: 0.85; }
+  48%  { content: "L4T9"; opacity: 0.85; }
+  56%  { content: "Z1V◇"; opacity: 0.9; }
+  64%  { content: "B8N7"; opacity: 0.9; }
+  72%  { content: "U5ER"; opacity: 0.95; }
+  80%  { content: attr(data-label); opacity: 0.95; }
+  100% { content: attr(data-label); opacity: 1; }
+}
+
+@keyframes scramble-7 {
+  0%   { content: "━━━━━━━"; opacity: 0.4; }
+  8%   { content: "X7K◆M2R"; opacity: 0.6; }
+  16%  { content: "◇3PF◆H4"; opacity: 0.7; }
+  24%  { content: "W5JL◆T9"; opacity: 0.8; }
+  32%  { content: "R2◆FH9P"; opacity: 0.8; }
+  40%  { content: "Q3FB8◇N"; opacity: 0.85; }
+  48%  { content: "L4T9W5◆"; opacity: 0.85; }
+  56%  { content: "Z1V◇G6D"; opacity: 0.9; }
+  64%  { content: "L1V3K1T"; opacity: 0.9; }
+  72%  { content: "LIV3KIT"; opacity: 0.95; }
+  80%  { content: attr(data-label); opacity: 0.95; }
+  100% { content: attr(data-label); opacity: 1; }
+}
+
+@keyframes scramble-8 {
+  0%   { content: "━━━━━━━━"; opacity: 0.4; }
+  8%   { content: "X7K◆M2R◇"; opacity: 0.6; }
+  16%  { content: "◇3PF◆H4Q"; opacity: 0.7; }
+  24%  { content: "W5JL◆T9Z"; opacity: 0.8; }
+  32%  { content: "R2◆FH9P3"; opacity: 0.8; }
+  40%  { content: "Q3FB8◇N7"; opacity: 0.85; }
+  48%  { content: "L4T9W5◆J"; opacity: 0.85; }
+  56%  { content: "D4T4BA5E"; opacity: 0.9; }
+  64%  { content: "DA7ABAS3"; opacity: 0.9; }
+  72%  { content: "DATABAS3"; opacity: 0.95; }
+  80%  { content: attr(data-label); opacity: 0.95; }
+  100% { content: attr(data-label); opacity: 1; }
+}
+
+.card-hover-corners[data-label]::after {
+  content: attr(data-label);
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 15px);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FF8C00;
+  opacity: 0;
+  z-index: 50;
+  pointer-events: none;
+  font-family: var(--font-mono), monospace;
+}
+
+/* Per-label scramble animations (matched char lengths) */
+[data-label="User"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
+[data-label="LiveKit"]:hover::after    { animation: scramble-7 0.7s step-end forwards; }
+[data-label="Database"]:hover::after   { animation: scramble-8 0.7s step-end forwards; }
+[data-label="I/O"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="SDKs"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
+[data-label="STT"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="LLM"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="TTS"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+
+/* Stack containers: fixed ::after position (no intrinsic height) */
+#stack-io[data-label]::after,
+#stack-sdks[data-label]::after,
+#stack-stt[data-label]::after,
+#stack-llm[data-label]::after,
+#stack-tts[data-label]::after {
+  display: block;
+  top: 63px;
+  left: 15px;
+}
+
+/* No ::after on cards without data-label */
+.card-hover-corners:not([data-label])::after {
+  content: none;
 }
 
 /* I/O stack */
@@ -162,7 +250,7 @@ body {
 
 /* ── Label push-down click effect ── */
 .label-push {
-  cursor: pointer;
+  cursor: default;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
