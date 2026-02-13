@@ -84,14 +84,14 @@ body {
 }
 
 /* Stack containers: override to fixed dimensions (no intrinsic size) */
-#stack-io::before, #stack-sdks::before, #stack-stt::before, #stack-llm::before, #stack-tools::before {
+#stack-io::before, #stack-sdks::before, #stack-stt::before, #stack-llm::before, #stack-tools::before, #stack-voice::before {
   inset: auto;
   width: 48px;
   height: 48px;
   left: 0;
   top: 0;
 }
-#stack-io:hover::before, #stack-sdks:hover::before, #stack-stt:hover::before, #stack-llm:hover::before, #stack-tools:hover::before {
+#stack-io:hover::before, #stack-sdks:hover::before, #stack-stt:hover::before, #stack-llm:hover::before, #stack-tools:hover::before, #stack-voice:hover::before {
   animation: corner-bounce-in-fixed 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
@@ -258,6 +258,8 @@ body {
 #stack-stt[data-label="Workflows"]:hover::after { animation: scramble-9 0.7s step-end forwards; }
 [data-label="Chatbot"]:hover::after,
 #stack-llm[data-label="Chatbot"]:hover::after { animation: scramble-7-chatbot 0.7s step-end forwards; }
+[data-label="Voice"]:hover::after,
+#stack-voice[data-label="Voice"]:hover::after { animation: scramble-5 0.7s step-end forwards; }
 [data-label="Tools"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 
 /* Stack containers: fixed ::after position (no intrinsic height) */
@@ -265,7 +267,8 @@ body {
 #stack-sdks[data-label]::after,
 #stack-stt[data-label]::after,
 #stack-llm[data-label]::after,
-#stack-tools[data-label]::after {
+#stack-tools[data-label]::after,
+#stack-voice[data-label]::after {
   display: block;
   top: 63px;
   left: 15px;
@@ -303,6 +306,13 @@ body {
 #stack-llm > div:nth-child(3) { animation-delay: -3.3s; }
 #stack-llm > div:nth-child(4) { animation-delay: -5.3s; }
 #stack-llm > div:nth-child(5) { animation-delay: -7.3s; }
+
+/* Voice Agents stack (offset -0.5s) */
+#stack-voice > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }
+#stack-voice > div:nth-child(2) { animation-delay: -0.5s; }
+#stack-voice > div:nth-child(3) { animation-delay: -2.5s; }
+#stack-voice > div:nth-child(4) { animation-delay: -4.5s; }
+#stack-voice > div:nth-child(5) { animation-delay: -6.5s; }
 
 /* Tools stack (Phase B, offset -1s) */
 #stack-tools > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }

@@ -82,6 +82,62 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Voice Agents Stack — human in the loop */}
+            <div id="stack-voice" data-label="Voice" className="card-hover-corners relative absolute top-[592px] left-[calc(50%-60px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+              <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
+                <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
+                  <span style={{ opacity: 1 }}>Voice</span>
+                </div>
+              </div>
+              {/* Headset / agent */}
+              <div className="absolute">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+                  <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 18v-6a9 9 0 0118 0v6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
+                      <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3v5zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3v5z" fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              {/* Sound wave */}
+              <div className="absolute">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+                  <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 3v18M8 7v10M4 10v4M16 7v10M20 10v4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              {/* Human-in-the-loop */}
+              <div className="absolute">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+                  <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="7" r="4" fill="currentColor" />
+                      <path d="M5 21v-2a7 7 0 0114 0v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
+                      <path d="M17 13l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M21 17H13a4 4 0 00-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              {/* AI avatar talk */}
+              <div className="absolute">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+                  <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="9" cy="9" r="4" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                      <path d="M3 21v-1a6 6 0 0112 0v1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                      <path d="M17 8l2-2 2 2M17 12l2 2 2-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M19 6v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Pipeline lines container */}
             <div className="pointer-events-none absolute top-1/2 left-1/2 z-20 h-full w-full max-w-7xl -translate-x-1/2 -translate-y-1/2">
               {/* Line 1 */}
@@ -217,6 +273,36 @@ export default function Home() {
                   </linearGradient>
                 </defs>
                 <path d="M1030,550 L1028,350" stroke="url(#_r_j2_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
+              </svg>
+
+              {/* Line 9 — Voice Agents → Human in the loop */}
+              <svg className="pointer-events-none absolute top-0 left-0 h-full w-full">
+                <defs>
+                  <linearGradient id="_r_voice_" gradientUnits="objectBoundingBox" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0, 0.5, 0.5)">
+                    <stop offset="0%" stopColor="rgba(0,0,0,0.08)" />
+                    <stop offset="20%" stopColor="rgba(0,0,0,0.08)" />
+                    <stop offset="50%" stopColor="#FF8C00" />
+                    <stop offset="80%" stopColor="rgba(0,0,0,0.08)" />
+                    <stop offset="100%" stopColor="rgba(0,0,0,0.08)" />
+                    <animateTransform attributeName="gradientTransform" type="translate" additive="sum" begin="0s" from="-3 0" to="3 0" dur="3s" repeatCount="indefinite" restart="whenNotActive" />
+                  </linearGradient>
+                </defs>
+                <path d="M628,616 L670,616" stroke="url(#_r_voice_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
+              </svg>
+
+              {/* Line 9b — Human in the loop → Voice Agents */}
+              <svg className="pointer-events-none absolute top-0 left-0 h-full w-full">
+                <defs>
+                  <linearGradient id="_r_voice_b_" gradientUnits="objectBoundingBox" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0, 0.5, 0.5)">
+                    <stop offset="0%" stopColor="rgba(0,0,0,0.08)" />
+                    <stop offset="20%" stopColor="rgba(0,0,0,0.08)" />
+                    <stop offset="50%" stopColor="#FF8C00" />
+                    <stop offset="80%" stopColor="rgba(0,0,0,0.08)" />
+                    <stop offset="100%" stopColor="rgba(0,0,0,0.08)" />
+                    <animateTransform attributeName="gradientTransform" type="translate" additive="sum" begin="1.5s" from="3 0" to="-3 0" dur="3s" repeatCount="indefinite" restart="whenNotActive" />
+                  </linearGradient>
+                </defs>
+                <path d="M670,624 L628,624" stroke="url(#_r_voice_b_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
               </svg>
 
               {/* AI Magic pill */}
