@@ -157,16 +157,31 @@ body {
 }
 
 @keyframes scramble-7 {
-  0%   { content: "━━━━━━━"; opacity: 0.4; }
-  8%   { content: "X7K◆M2R"; opacity: 0.6; }
-  16%  { content: "◇3PF◆H4"; opacity: 0.7; }
-  24%  { content: "W5JL◆T9"; opacity: 0.8; }
-  32%  { content: "R2◆FH9P"; opacity: 0.8; }
-  40%  { content: "Q3FB8◇N"; opacity: 0.85; }
+  0%   { content: "-------"; opacity: 0.4; }
+  8%   { content: "X7KxM2R"; opacity: 0.6; }
+  16%  { content: "z3PFxH4"; opacity: 0.7; }
+  24%  { content: "W5JLxT9"; opacity: 0.8; }
+  32%  { content: "R2xFH9P"; opacity: 0.8; }
+  40%  { content: "Q3FB8zN"; opacity: 0.85; }
   48%  { content: "A1 CR3W"; opacity: 0.85; }
   56%  { content: "AI CR3W"; opacity: 0.9; }
   64%  { content: "AI CRE3"; opacity: 0.9; }
   72%  { content: "AI CREW"; opacity: 0.95; }
+  80%  { content: attr(data-label); opacity: 0.95; }
+  100% { content: attr(data-label); opacity: 1; }
+}
+
+@keyframes scramble-7-chatbot {
+  0%   { content: "-------"; opacity: 0.4; }
+  8%   { content: "X7KxM2R"; opacity: 0.6; }
+  16%  { content: "z3PFxH4"; opacity: 0.7; }
+  24%  { content: "CH4TxO7"; opacity: 0.8; }
+  32%  { content: "CHA7B0T"; opacity: 0.8; }
+  40%  { content: "CHATB0T"; opacity: 0.85; }
+  48%  { content: "CHATBO7"; opacity: 0.85; }
+  56%  { content: "CHATB0T"; opacity: 0.9; }
+  64%  { content: "CHATBOT"; opacity: 0.9; }
+  72%  { content: "CHATBOT"; opacity: 0.95; }
   80%  { content: attr(data-label); opacity: 0.95; }
   100% { content: attr(data-label); opacity: 1; }
 }
@@ -241,7 +256,8 @@ body {
 [data-label="APIs"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
 [data-label="Workflows"]:hover::after,
 #stack-stt[data-label="Workflows"]:hover::after { animation: scramble-9 0.7s step-end forwards; }
-[data-label="LLM"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="Chatbot"]:hover::after,
+#stack-llm[data-label="Chatbot"]:hover::after { animation: scramble-7-chatbot 0.7s step-end forwards; }
 [data-label="Tools"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 
 /* Stack containers: fixed ::after position (no intrinsic height) */

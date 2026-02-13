@@ -377,38 +377,44 @@ export default function Home() {
               </div>
             </div>
 
-            {/* LLM Node Stack */}
-            <div id="stack-llm" data-label="LLM" className="card-hover-corners relative absolute top-[660px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            {/* Chatbot Node Stack */}
+            <div id="stack-llm" data-label="Chatbot" className="card-hover-corners relative absolute top-[660px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>LLM</span>
+                  <span style={{ opacity: 1 }}>Chatbot</span>
                 </div>
               </div>
+              {/* Clover */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="OpenAI Logo" className="h-6 w-6" src="/logos/square/open-ai.svg" />
+                    <img alt="Clover" className="h-6 w-6 object-contain" src="/logos/clover.svg" />
                   </div>
                 </div>
               </div>
+              {/* Salesforce */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="Google Logo" className="h-6 w-6" src="/logos/square/google.svg" />
+                    <img alt="Salesforce" className="h-6 w-6 object-contain" src="/logos/salesforce.png" />
                   </div>
                 </div>
               </div>
+              {/* Microsoft Dynamics CRM */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="Cerebras Logo" className="h-6 w-6" src="/logos/square/cerebras.svg" />
+                    <img alt="Microsoft Dynamics CRM" className="h-6 w-6 object-contain" src="/logos/ms-dynamics-crm.png" />
                   </div>
                 </div>
               </div>
+              {/* Chat / AI Avatar */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="Perplexity Logo" className="h-6 w-6" src="/logos/square/perplexity.svg" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="currentColor" />
+                    </svg>
                   </div>
                 </div>
               </div>
