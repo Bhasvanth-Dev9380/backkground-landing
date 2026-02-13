@@ -444,10 +444,7 @@ export default function Home() {
               </div>
               <div data-label="Spinabot" className="absolute -top-[70px] left-1 z-0 flex h-12 w-12 items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                 <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#FF8C00]" role="img" aria-label="Spinabot logo">
-                    <circle cx="12" cy="12" r="4" fill="currentColor" />
-                    <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5.64 5.64l2.83 2.83M15.54 15.54l2.83 2.83M5.64 18.36l2.83-2.83M15.54 8.46l2.83-2.83" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
+                  <img alt="Spinabot" className="spin-logo h-9 w-9" src="/logos/logo.svg" />
                 </div>
               </div>
               
