@@ -1,17 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import fs from "fs";
+import path from "path";
 
-const TOOL_LOGOS = [
-  "slack.svg", "gmail.svg", "notion.svg", "hubspot.svg", "jira.svg",
-  "discord.svg", "stripe.svg", "shopify.svg", "github.svg", "linkedin.svg",
-  "zoom.svg", "airtable.svg", "asana-logo.svg", "calendly.svg",
-  "google-calendar.svg", "google-drive.svg", "google-sheets.svg",
-  "microsoft_teams.svg", "outlook.svg", "telegram.svg",
-  "wordpress.svg", "youtube.svg", "zendesk.svg", "zoho-crm.svg",
-  "intercom.svg", "facebook.svg", "google-analytics.svg", "webhooks.svg",
-  "airbnb.svg", "openai.svg", "anthropic.svg", "gemini.svg", "pinecone.svg",
-  "salesforce.png", "google-workspace.png", "razorpay.png", "sendgrid.png",
-  "ms-dynamics-crm.png",
-];
+const logosDir = path.join(process.cwd(), "public", "logos");
+const ALL_TOOL_LOGOS = fs
+  .readdirSync(logosDir)
+  .filter((f) => /\.(svg|png)$/i.test(f))
+  .filter((f) => !/(white|dark|black|logo\.|aicrew)/i.test(f));
 
 function pickRandom(arr: string[], n: number) {
   const shuffled = [...arr].sort(() => Math.random() - 0.5);
@@ -19,7 +14,7 @@ function pickRandom(arr: string[], n: number) {
 }
 
 export default function Home() {
-  const toolLogos = pickRandom(TOOL_LOGOS, 10);
+  const toolLogos = pickRandom(ALL_TOOL_LOGOS, 10);
   return (
     <section className="relative mt-32 w-full overflow-hidden border-b border-[#eee] py-12 md:h-[800px] lg:py-48">
       <div className="px-6">
