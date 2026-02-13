@@ -6,68 +6,48 @@ export default function Home() {
       <div className="px-6">
         <div className="mx-auto w-full max-w-7xl">
           <div className="max-w-md">
-            <div className="space-y-2 text-[#222]">
-              <div className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-[#222]">AI Ecosystem</div>
-              <h2 className="z-20 text-pretty text-3xl font-light tracking-tight lg:text-4xl">
-                <span className="word-animate" style={{ animationDelay: "0s" }}>The </span>
-                <span className="word-animate" style={{ animationDelay: "0.1s", color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.6) 0px 0px 12px)" }}>intelligent </span>
-                <span className="word-animate" style={{ animationDelay: "0.2s" }}>stack </span>
-                <span className="word-animate" style={{ animationDelay: "0.3s" }}>for </span>
-                <span className="word-animate" style={{ animationDelay: "0.4s" }}>AI </span>
-                <span className="word-animate" style={{ animationDelay: "0.5s" }}>Agents </span>
+            <div className="space-y-3 text-[#222]">
+              <div className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-[#FF8C00]">AI Workforce Platform</div>
+              <h2 className="z-20 text-pretty text-3xl font-light tracking-tight lg:text-[2.8rem] lg:leading-[1.2]">
+                <span className="word-animate" style={{ animationDelay: "0s" }}>Your </span>
+                <span className="word-animate" style={{ animationDelay: "0.12s", color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.5) 0px 0px 10px)" }}>AI&nbsp;crew </span>
+                <span className="word-animate" style={{ animationDelay: "0.24s" }}>just </span>
+                <span className="word-animate" style={{ animationDelay: "0.36s" }}>clocked&nbsp;in. </span>
               </h2>
+              <p className="max-w-[380px] text-[13px] leading-[1.7] text-[#666]">
+                Your team burns 3+ hours a day on scheduling, follow-ups, and busywork. Just text your crew — it schedules, calls, builds, and ships. You stay in the loop.
+              </p>
             </div>
-            <div className="relative z-10 flex flex-col items-start gap-0 py-8 md:py-12">
-              <div className="relative">
-                <div className="pointer-events-none flex w-full max-w-md gap-3 py-2 text-sm text-[#444] transition-all duration-300 md:pointer-events-auto">
-                  <span className="shrink-0 text-[#FF8C00]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5">
-                      <path d="M9.75 20.25L14.25 3.75M18.25 7.75L22.25 12L18.25 16.25M5.75 16.25L1.75 12L5.75 7.75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
-                    </svg>
-                  </span>
-                  <span>Modular framework to build and deploy AI agents</span>
-                </div>
+            <div className="relative z-10 grid grid-cols-[auto_1fr] items-start gap-x-3.5 gap-y-3 pt-7">
+              <div className="flex flex-col items-center gap-1 pt-0.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="2" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">AI Crew</span>
               </div>
-              <div className="relative">
-                <div className="pointer-events-none flex w-full max-w-md gap-3 py-2 text-sm text-[#444] transition-all duration-300 md:pointer-events-auto">
-                  <span className="shrink-0 text-[#FF8C00]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5">
-                      <path d="M8.75 13.75C10.5449 13.75 12 15.2051 12 17M15.25 10.25C13.4551 10.25 12 8.79493 12 7M12 3.65628V20.1132M19.0167 17.8991C20.3271 17.3617 21.25 16.0734 21.25 14.5694C21.25 13.5629 20.8366 12.6529 20.1703 12C20.8366 11.3471 21.25 10.4371 21.25 9.43056C21.25 7.57553 19.8459 6.04846 18.0425 5.8542C17.5934 4.07047 15.9787 2.75 14.0556 2.75C13.3067 2.75 12.6047 2.9502 12 3.29999C11.3953 2.9502 10.6933 2.75 9.94444 2.75C8.02133 2.75 6.40662 4.07047 5.95754 5.8542C4.15413 6.04846 2.75 7.57553 2.75 9.43056C2.75 10.4371 3.16341 11.3471 3.82969 12C3.16341 12.6529 2.75 13.5629 2.75 14.5694C2.75 16.0734 3.67291 17.3617 4.98327 17.8991C5.5365 19.8338 7.31815 21.25 9.43056 21.25C10.3813 21.25 11.2651 20.9631 12 20.4712C12.7349 20.9631 13.6187 21.25 14.5694 21.25C16.6819 21.25 18.4635 19.8338 19.0167 17.8991Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
-                    </svg>
-                  </span>
-                  <span>Unified gateway for NLU, LLM, and generative models</span>
-                </div>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Meetings pile up. Tasks slip. Your crew handles it before you notice.</span>
+
+              <div className="flex flex-col items-center gap-1 pt-0.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><circle cx="5" cy="6" r="3" stroke="currentColor" strokeWidth="2" /><circle cx="19" cy="18" r="3" stroke="currentColor" strokeWidth="2" /><circle cx="19" cy="6" r="3" stroke="currentColor" strokeWidth="2" /><path d="M8 6h8M5 9v6a3 3 0 003 3h8" stroke="currentColor" strokeWidth="2" /></svg>
+                <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">Workflows</span>
               </div>
-              <div className="relative">
-                <div className="pointer-events-none flex w-full max-w-md gap-3 py-2 text-sm text-[#444] transition-all duration-300 md:pointer-events-auto">
-                  <span className="shrink-0 text-[#FF8C00]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5">
-                      <path d="M17.125 19.25H8.925C4.96236 19.25 1.75 16.0041 1.75 12C1.75 7.99594 4.96236 4.75 8.925 4.75C11.8865 4.75 14.4289 6.56294 15.5245 9.15037C16.0281 8.98326 16.5661 8.89286 17.125 8.89286C19.9555 8.89286 22.25 11.2114 22.25 14.0714C22.25 16.9315 19.9555 19.25 17.125 19.25Z" stroke="currentColor" strokeWidth="1.5" />
-                    </svg>
-                  </span>
-                  <span>Managed cloud for scaling agents across regions</span>
-                </div>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Manual ops drain margins. Build automations visually, ship in minutes.</span>
+
+              <div className="flex flex-col items-center gap-1 pt-0.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" strokeWidth="2" /></svg>
+                <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">Chatbots</span>
               </div>
-              <div className="relative">
-                <div className="pointer-events-none flex w-full max-w-md gap-3 py-2 text-sm text-[#444] transition-all duration-300 md:pointer-events-auto">
-                  <span className="shrink-0 text-[#FF8C00]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5">
-                      <path d="M8.90625 3.75H3.75V5.8125C3.75 13.7861 10.2139 20.25 18.1875 20.25H20.25V15.0938L16.125 13.0312L14.5781 14.5781C12 13.5469 10.4531 12 9.42188 9.42188L10.9688 7.875L8.90625 3.75Z" stroke="currentColor" strokeWidth="1.5" />
-                    </svg>
-                  </span>
-                  <span>Multi-channel connectors for web, voice, and APIs</span>
-                </div>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Customers wait hours for answers already in your docs. Instant, RAG-powered.</span>
+
+              <div className="flex flex-col items-center gap-1 pt-0.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M8.91 3.75H3.75V5.81C3.75 13.79 10.21 20.25 18.19 20.25H20.25V15.09L16.13 13.03L14.58 14.58C12 13.55 10.45 12 9.42 9.42L10.97 7.88L8.91 3.75Z" stroke="currentColor" strokeWidth="2" /></svg>
+                <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">Voice</span>
               </div>
-              <div className="relative">
-                <div className="pointer-events-none flex w-full max-w-md gap-3 py-2 text-sm text-[#444] transition-all duration-300 md:pointer-events-auto">
-                  <span className="shrink-0 text-[#FF8C00]">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" className="h-5 w-5">
-                      <path d="M3.75 9.25H9.25V3.75H3.75V9.25ZM3.75 9.25V14.75M3.75 9.25H14.75V14.75H3.75M3.75 14.75V20.25H20.25V14.75H3.75ZM3.75 1.75V22.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
-                    </svg>
-                  </span>
-                  <span>End-to-end observability for every agent session</span>
-                </div>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Can&#39;t hire fast enough? Deploy a rep that never sleeps. Sub-500ms.</span>
+
+              <div className="flex flex-col items-center gap-1 pt-0.5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">SLM</span>
               </div>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Stop sending data to third-party LLMs. Your model, your terms.</span>
             </div>
           </div>
         </div>
@@ -165,7 +145,7 @@ export default function Home() {
                 <path d="M765,685 L940,686" stroke="url(#_r_iv_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
               </svg>
 
-              {/* Line 6 (static) */}
+              {/* Line 6 — Business Logic ↔ Database */}
               <svg className="pointer-events-none absolute top-0 left-0 h-full w-full">
                 <defs>
                   <linearGradient id="_r_j0_" gradientUnits="objectBoundingBox" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(119.248826336547, 0.5, 0.5)">
@@ -174,9 +154,10 @@ export default function Home() {
                     <stop offset="50%" stopColor="#FF8C00" />
                     <stop offset="80%" stopColor="rgba(0,0,0,0.08)" />
                     <stop offset="100%" stopColor="rgba(0,0,0,0.08)" />
+                    <animateTransform attributeName="gradientTransform" type="translate" additive="sum" begin="1s" from="-3 0" to="3 0" dur="3s" repeatCount="indefinite" restart="whenNotActive" />
                   </linearGradient>
                 </defs>
-                <path d="M1020,700 L1020.9360020479018,817.0002559877126 Q1021,825 1013,825 L950,825" stroke="rgba(0,0,0,0.08)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
+                <path d="M1020,700 L1020.9360020479018,817.0002559877126 Q1021,825 1013,825 L950,825" stroke="url(#_r_j0_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
               </svg>
 
               {/* Line 7 */}
@@ -218,6 +199,7 @@ export default function Home() {
               <div className="absolute top-[313px] left-[calc(50%+180px)] z-20 rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                 <span style={{ opacity: 1 }}>gRPC</span>
               </div>
+
             </div>
 
             {/* Input Node Stack */}
