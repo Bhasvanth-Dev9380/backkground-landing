@@ -20,15 +20,15 @@ export default function Home() {
       <div className="px-6">
         <div className="mx-auto w-full max-w-7xl">
           <div className="max-w-md">
-            <div className="space-y-3 text-[#222]">
+            <div className="space-y-3 text-[#111]">
               <div className="font-mono text-xs font-bold uppercase tracking-[0.25em] text-[#FF8C00]">AI Workforce Platform</div>
-              <h2 className="z-20 text-pretty text-3xl font-light tracking-tight lg:text-[2.8rem] lg:leading-[1.2]">
+              <h2 className="z-20 text-pretty text-3xl font-normal tracking-tight lg:text-[2.8rem] lg:leading-[1.2]">
                 <span className="word-animate" style={{ animationDelay: "0s" }}>Your </span>
-                <span className="word-animate" style={{ animationDelay: "0.12s", color: "#FF8C00", filter: "drop-shadow(rgba(255,140,0,0.5) 0px 0px 10px)" }}>AI&nbsp;crew </span>
+                <span className="word-animate font-semibold" style={{ animationDelay: "0.12s", color: "#FF8C00" }}>AI&nbsp;crew </span>
                 <span className="word-animate" style={{ animationDelay: "0.24s" }}>just </span>
                 <span className="word-animate" style={{ animationDelay: "0.36s" }}>clocked&nbsp;in. </span>
               </h2>
-              <p className="max-w-[380px] text-[13px] font-semibold leading-[1.7] text-[#666]">
+              <p className="max-w-[380px] text-[13.5px] leading-[1.7] text-[#555]">
                 Your team burns 3+ hours a day on scheduling, follow-ups, and busywork. Just text your crew — it schedules, calls, builds, and ships. You stay in the loop.
               </p>
             </div>
