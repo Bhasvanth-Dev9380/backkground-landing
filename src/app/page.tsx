@@ -221,7 +221,7 @@ export default function Home() {
 
               {/* AI Magic pill */}
               <div className="absolute top-[735px] left-[calc(50%+335px)] z-20 rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                <span style={{ opacity: 1 }}>Our AI magic</span>
+                <span style={{ opacity: 1 }}>Our AI magic layer</span>
               </div>
 
               {/* gRPC pill */}
@@ -238,39 +238,44 @@ export default function Home() {
                   <span style={{ opacity: 1 }}>Input</span>
                 </div>
               </div>
+              {/* Chat bubble */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
-                      <path d="M7.00171 7C7.00171 4.23858 9.24029 2 12.0017 2C14.7631 2 17.0017 4.23858 17.0017 7V12C17.0017 14.7614 14.7631 17 12.0017 17C9.24029 17 7.00171 14.7614 7.00171 12V7Z" fill="currentColor" />
-                      <path d="M5.25323 13.867L5.12021 13.385L4.15625 13.6511L4.28928 14.133C5.18021 17.3611 8.04316 19.7714 11.5016 19.9846V22H12.5016V19.9846C15.9601 19.7714 18.8231 17.3611 19.714 14.133L19.847 13.6511L18.8831 13.385L18.75 13.867C17.9331 16.827 15.2205 19 12.0016 19C8.78279 19 6.07019 16.827 5.25323 13.867Z" fill="currentColor" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" fill="currentColor" />
                     </svg>
                   </div>
                 </div>
               </div>
+              {/* Text / keyboard */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M2 4H16V9.19141L22 6.19141V17.8094L16 14.8094V20H2V4ZM16 13.6914L21 16.1914V7.80944L16 10.3094V13.6914Z" fill="currentColor" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="2" fill="none" />
+                      <path d="M6 8h2M10 8h2M14 8h2M18 8h0M6 12h2M10 12h2M14 12h2M18 12h0M8 16h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
               </div>
+              {/* Voice / microphone */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M2 4H5V5H3V7H2V4ZM7 4H11V5H7V4ZM13 4H17V5H13V4ZM18.8889 4H22V7H21V5H18.8889V4ZM3 10V14H2V10H3ZM18.5 11C16.0147 11 14 13.0147 14 15.5C14 17.9853 16.0147 20 18.5 20C20.9853 20 23 17.9853 23 15.5C23 13.0147 20.9853 11 18.5 11ZM13 15.5C13 12.4624 15.4624 10 18.5 10C21.5376 10 24 12.4624 24 15.5C24 18.5376 21.5376 21 18.5 21C15.4624 21 13 18.5376 13 15.5ZM15.5 15.5C15.5 13.8431 16.8431 12.5 18.5 12.5C20.1569 12.5 21.5 13.8431 21.5 15.5C21.5 17.1569 20.1569 18.5 18.5 18.5C16.8431 18.5 15.5 17.1569 15.5 15.5ZM3 16.8571V19H5V20H2V16.8571H3ZM7 19H11V20H7V19Z" fill="currentColor" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="9" y="2" width="6" height="12" rx="3" fill="currentColor" />
+                      <path d="M5 11a7 7 0 0014 0M12 18v4M9 22h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
               </div>
+              {/* Phone call */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation">
-                      <path d="M3 3V5.625C3 14.1164 9.88362 21 18.375 21H21V14.8785L16.1513 12.4541L14.539 14.0664C12.2916 13.1001 10.8999 11.7084 9.93361 9.46099L11.5459 7.84873L9.12152 3H3Z" fill="currentColor" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="currentColor" />
                     </svg>
                   </div>
                 </div>
@@ -314,38 +319,59 @@ export default function Home() {
               </div>
             </div>
 
-            {/* NLU Node Stack */}
-            <div id="stack-stt" data-label="NLU" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            {/* Workflows Node Stack */}
+            <div id="stack-stt" data-label="Workflows" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                  <span style={{ opacity: 1 }}>NLU</span>
+                  <span style={{ opacity: 1 }}>Workflows</span>
                 </div>
               </div>
+              {/* Flowchart / decision tree */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="Deepgram Logo" className="h-6 w-6" src="/logos/square/deepgram.svg" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="3" y="2" width="7" height="5" rx="1" fill="currentColor" />
+                      <rect x="14" y="2" width="7" height="5" rx="1" fill="currentColor" />
+                      <rect x="8" y="17" width="8" height="5" rx="1" fill="currentColor" />
+                      <path d="M6.5 7v3h11V7M12 10v7" stroke="currentColor" strokeWidth="1.5" />
+                    </svg>
                   </div>
                 </div>
               </div>
+              {/* Gear / automation */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="OpenAI Logo" className="h-6 w-6" src="/logos/square/open-ai.svg" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" fill="currentColor" />
+                      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                    </svg>
                   </div>
                 </div>
               </div>
+              {/* Branch / split arrows */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="Groq Logo" className="h-6 w-6" src="/logos/square/groq.svg" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="5" r="3" fill="currentColor" />
+                      <circle cx="5" cy="19" r="3" fill="currentColor" />
+                      <circle cx="19" cy="19" r="3" fill="currentColor" />
+                      <path d="M12 8v2l-7 7M12 10l7 7" stroke="currentColor" strokeWidth="1.5" />
+                    </svg>
                   </div>
                 </div>
               </div>
+              {/* Repeat / loop */}
               <div className="absolute">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] p-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img alt="Google Logo" className="h-6 w-6" src="/logos/square/google.svg" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 1l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M21 13v2a4 4 0 01-4 4H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -405,7 +431,7 @@ export default function Home() {
             {/* Business Logic card */}
             <div className="absolute top-[600px] left-[calc(50%+300px)] z-20 flex items-center justify-center card-hover-corners label-push rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
               <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                <img alt="Business Logic" className="h-[115px] w-[149px]" src="/images/home/tile-business-logic.svg" />
+                <img alt="Business Logic" className="h-[115px] w-[149px]" src="/images/home/tile-business-logic.png" />
               </div>
             </div>
 

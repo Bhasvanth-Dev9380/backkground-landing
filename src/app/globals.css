@@ -200,6 +200,20 @@ body {
   80%  { content: attr(data-label); opacity: 0.95; }
   100% { content: attr(data-label); opacity: 1; }
 }
+@keyframes scramble-9 {
+  0%   { content: "---------"; opacity: 0.4; }
+  8%   { content: "X7KxM2RyW"; opacity: 0.6; }
+  16%  { content: "z3PFxH4QZ"; opacity: 0.7; }
+  24%  { content: "W5JKFxT9Z"; opacity: 0.8; }
+  32%  { content: "W0RKFxOW5"; opacity: 0.8; }
+  40%  { content: "WORKFL0WS"; opacity: 0.85; }
+  48%  { content: "W0RKFLOW5"; opacity: 0.85; }
+  56%  { content: "WORKFL0WS"; opacity: 0.9; }
+  64%  { content: "WORKFLOWS"; opacity: 0.9; }
+  72%  { content: "WORKFLOWS"; opacity: 0.95; }
+  80%  { content: attr(data-label); opacity: 0.95; }
+  100% { content: attr(data-label); opacity: 1; }
+}
 
 .card-hover-corners[data-label]::after {
   content: attr(data-label);
@@ -225,7 +239,8 @@ body {
 [data-label="Spinabot"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 [data-label="Input"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 [data-label="APIs"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
-[data-label="NLU"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
+[data-label="Workflows"]:hover::after,
+#stack-stt[data-label="Workflows"]:hover::after { animation: scramble-9 0.7s step-end forwards; }
 [data-label="LLM"]:hover::after        { animation: scramble-3 0.7s step-end forwards; }
 [data-label="Tools"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 
