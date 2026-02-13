@@ -16,7 +16,7 @@ function pickRandom(arr: string[], n: number) {
 export default function Home() {
   const toolLogos = pickRandom(ALL_TOOL_LOGOS, 10);
   return (
-    <section className="relative mt-32 w-full overflow-hidden border-b border-[#eee] py-12 md:h-[800px] lg:py-48">
+    <section className="relative mt-32 w-full overflow-hidden border-b border-[#eee] py-12 min-[900px]:h-[800px] lg:py-48">
       <div className="px-6">
         <div className="mx-auto w-full max-w-7xl">
           <div className="max-w-md">
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="hero-interactive-framework" className="absolute top-0 hidden h-[838px] w-full -translate-x-1/3 translate-y-20 scale-[0.5] md:-top-20 md:-translate-x-1/4 md:translate-y-8 md:scale-[0.94] lg:translate-x-0 lg:translate-y-0 md:block">
+      <div id="hero-interactive-framework" className="relative mt-8 h-[500px] w-full scale-[0.35] origin-top-left translate-x-0 min-[900px]:absolute min-[900px]:top-0 min-[900px]:mt-0 min-[900px]:h-[838px] min-[900px]:-top-20 min-[900px]:-translate-x-1/4 min-[900px]:translate-y-8 min-[900px]:scale-[0.94] lg:translate-x-0 lg:translate-y-0">
         <div className="h-[838px] w-full" style={{ opacity: 1 }}>
           <div className="absolute top-[120px] left-[calc(50%-600px)] h-[1095px] w-[1580px] -rotate-30 skew-x-30">
             <img className="absolute top-0 left-0 object-none" alt="Grid" src="/images/home/hero-grid.svg" style={{ opacity: 1 }} />
@@ -280,7 +280,7 @@ export default function Home() {
             </div>
 
             {/* Input Node Stack */}
-            <div id="stack-io" data-label="Input" className="card-hover-corners relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#333]" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-io" data-label="Input" className="card-hover-corners relative absolute top-[289px] left-[calc(50%+17px)] z-20 text-[#FF8C00]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>Input</span>
