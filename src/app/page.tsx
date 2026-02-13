@@ -37,31 +37,31 @@ export default function Home() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="9" cy="7" r="4" stroke="currentColor" strokeWidth="2" /><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
                 <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">AI Crew</span>
               </div>
-              <span className="pt-1 text-[13px] font-semibold leading-[1.6] text-[#555]">Meetings pile up. Tasks slip. Your crew handles it before you notice.</span>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Meetings pile up. Tasks slip. Your crew handles it before you notice.</span>
 
               <div className="flex flex-col items-center gap-1 pt-0.5">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><circle cx="5" cy="6" r="3" stroke="currentColor" strokeWidth="2" /><circle cx="19" cy="18" r="3" stroke="currentColor" strokeWidth="2" /><circle cx="19" cy="6" r="3" stroke="currentColor" strokeWidth="2" /><path d="M8 6h8M5 9v6a3 3 0 003 3h8" stroke="currentColor" strokeWidth="2" /></svg>
                 <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">Workflows</span>
               </div>
-              <span className="pt-1 text-[13px] font-semibold leading-[1.6] text-[#555]">Manual ops drain margins. Build automations visually, ship in minutes.</span>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Manual ops drain margins. Build automations visually, ship in minutes.</span>
 
               <div className="flex flex-col items-center gap-1 pt-0.5">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" strokeWidth="2" /></svg>
                 <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">Chatbots</span>
               </div>
-              <span className="pt-1 text-[13px] font-semibold leading-[1.6] text-[#555]">Customers wait hours for answers already in your docs. Instant, RAG-powered.</span>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Customers wait hours for answers already in your docs. Instant, RAG-powered.</span>
 
               <div className="flex flex-col items-center gap-1 pt-0.5">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M8.91 3.75H3.75V5.81C3.75 13.79 10.21 20.25 18.19 20.25H20.25V15.09L16.13 13.03L14.58 14.58C12 13.55 10.45 12 9.42 9.42L10.97 7.88L8.91 3.75Z" stroke="currentColor" strokeWidth="2" /></svg>
                 <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">Voice</span>
               </div>
-              <span className="pt-1 text-[13px] font-semibold leading-[1.6] text-[#555]">Losing leads after hours? Your AI agent picks up every call, 24/7 — no hold times, no missed revenue.</span>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Losing leads after hours? Your AI agent picks up every call, 24/7 — no hold times, no missed revenue.</span>
 
               <div className="flex flex-col items-center gap-1 pt-0.5">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#FF8C00]"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 <span className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] font-medium text-[#333]">SLM</span>
               </div>
-              <span className="pt-1 text-[13px] font-semibold leading-[1.6] text-[#555]">Stop sending data to third-party LLMs. Your model, your terms.</span>
+              <span className="pt-1 text-[13px] leading-[1.6] text-[#555]">Stop sending data to third-party LLMs. Your model, your terms.</span>
             </div>
           </div>
         </div>
@@ -339,17 +339,17 @@ export default function Home() {
               </div>
               {/* iMessage */}
               <div className="absolute">
-                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img width="28" height="28" alt="iMessage" src="/logos/imessage.png" />
+                    <img width="32" height="32" alt="iMessage" src="/logos/imessage.png" />
                   </div>
                 </div>
               </div>
               {/* Spinabot App */}
               <div className="absolute">
-                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] px-3 py-3 shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-[#E8A020] shadow-[-3px_3px_0px_0px_rgba(255,140,0,0.25)] transition-all duration-500 ease-out hover:border-[#FF8C00] hover:shadow-[-3px_3px_0px_0px_#FF8C00]" style={{ backgroundColor: "#ffffff", transform: "none" }}>
                   <div className="relative flex items-center justify-center" style={{ opacity: 1 }}>
-                    <img width="36" height="36" alt="Spinabot" src="/logos/logo.svg" />
+                    <img width="40" height="40" alt="Spinabot" src="/logos/logo.svg" />
                   </div>
                 </div>
               </div>
@@ -387,7 +387,7 @@ export default function Home() {
             </div>
 
             {/* Workflows Node Stack */}
-            <div id="stack-stt" data-label="Workflows" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20" style={{ transformStyle: "preserve-3d" }}>
+            <div id="stack-stt" data-label="Workflows" className="card-hover-corners relative absolute top-[520px] left-[calc(50%+100px)] z-20 text-[#FF8C00]" style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute top-0 left-0 z-30 -translate-x-1/2 -translate-y-1/2" style={{ opacity: 1 }}>
                 <div className="rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
                   <span style={{ opacity: 1 }}>Workflows</span>
