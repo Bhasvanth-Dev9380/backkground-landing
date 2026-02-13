@@ -18,6 +18,27 @@ body {
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
 }
 
+/* ── Voice line connecting animation ── */
+@keyframes voice-line-sweep {
+  0%   { background-position: -100% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes voice-line-sweep-rev {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -100% 0; }
+}
+.voice-line-fwd {
+  background: linear-gradient(90deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.08) 30%, #FF8C00 50%, rgba(0,0,0,0.08) 70%, rgba(0,0,0,0.08) 100%);
+  background-size: 200% 100%;
+  animation: voice-line-sweep 3s linear infinite;
+}
+.voice-line-rev {
+  background: linear-gradient(90deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.08) 30%, #FF8C00 50%, rgba(0,0,0,0.08) 70%, rgba(0,0,0,0.08) 100%);
+  background-size: 200% 100%;
+  animation: voice-line-sweep-rev 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
 /* ── Card stack cycling ── */
 @keyframes card-cycle {
   0%, 20%  { opacity: 1;   z-index: 10;  transform: translateY(0px) translateX(0px); }
@@ -253,7 +274,7 @@ body {
 [data-label="User"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
 [data-label="Spinabot"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
 [data-label="Input"]:hover::after      { animation: scramble-5 0.7s step-end forwards; }
-[data-label="APIs"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
+[data-label="Apps"]:hover::after       { animation: scramble-4 0.7s step-end forwards; }
 [data-label="Workflows"]:hover::after,
 #stack-stt[data-label="Workflows"]:hover::after { animation: scramble-9 0.7s step-end forwards; }
 [data-label="Chatbot"]:hover::after,
@@ -287,11 +308,13 @@ body {
 #stack-io > div:nth-child(5) { animation-delay: -6s; }
 
 /* SDKs stack (offset -0.7s) */
+/* Apps stack (5 cards, ~1.6s apart) */
 #stack-sdks > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }
-#stack-sdks > div:nth-child(2) { animation-delay: -0.7s; }
-#stack-sdks > div:nth-child(3) { animation-delay: -2.7s; }
-#stack-sdks > div:nth-child(4) { animation-delay: -4.7s; }
-#stack-sdks > div:nth-child(5) { animation-delay: -6.7s; }
+#stack-sdks > div:nth-child(2) { animation-delay: 0s; }
+#stack-sdks > div:nth-child(3) { animation-delay: -1.6s; }
+#stack-sdks > div:nth-child(4) { animation-delay: -3.2s; }
+#stack-sdks > div:nth-child(5) { animation-delay: -4.8s; }
+#stack-sdks > div:nth-child(6) { animation-delay: -6.4s; }
 
 /* STT stack (Phase B: child 5 starts active) */
 #stack-stt > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }
@@ -307,12 +330,14 @@ body {
 #stack-llm > div:nth-child(4) { animation-delay: -5.3s; }
 #stack-llm > div:nth-child(5) { animation-delay: -7.3s; }
 
-/* Voice Agents stack (offset -0.5s) */
+/* Voice Agents stack (6 cards, ~1.33s apart) */
 #stack-voice > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }
-#stack-voice > div:nth-child(2) { animation-delay: -0.5s; }
-#stack-voice > div:nth-child(3) { animation-delay: -2.5s; }
-#stack-voice > div:nth-child(4) { animation-delay: -4.5s; }
-#stack-voice > div:nth-child(5) { animation-delay: -6.5s; }
+#stack-voice > div:nth-child(2) { animation-delay: 0s; }
+#stack-voice > div:nth-child(3) { animation-delay: -1.33s; }
+#stack-voice > div:nth-child(4) { animation-delay: -2.66s; }
+#stack-voice > div:nth-child(5) { animation-delay: -4s; }
+#stack-voice > div:nth-child(6) { animation-delay: -5.33s; }
+#stack-voice > div:nth-child(7) { animation-delay: -6.66s; }
 
 /* Tools stack (Phase B, offset -1s) */
 #stack-tools > div:nth-child(n+2) { animation: card-cycle 8s ease-in-out infinite; }
