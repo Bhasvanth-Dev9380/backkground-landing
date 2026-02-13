@@ -5,10 +5,12 @@ const TOOL_LOGOS = [
   "discord.svg", "stripe.svg", "shopify.svg", "github.svg", "linkedin.svg",
   "zoom.svg", "airtable.svg", "asana-logo.svg", "calendly.svg",
   "google-calendar.svg", "google-drive.svg", "google-sheets.svg",
-  "microsoft_teams.svg", "outlook.svg", "salesforce.png", "telegram.svg",
+  "microsoft_teams.svg", "outlook.svg", "telegram.svg",
   "wordpress.svg", "youtube.svg", "zendesk.svg", "zoho-crm.svg",
   "intercom.svg", "facebook.svg", "google-analytics.svg", "webhooks.svg",
   "airbnb.svg", "openai.svg", "anthropic.svg", "gemini.svg", "pinecone.svg",
+  "salesforce.png", "google-workspace.png", "razorpay.png", "sendgrid.png",
+  "ms-dynamics-crm.png",
 ];
 
 function pickRandom(arr: string[], n: number) {
@@ -17,7 +19,7 @@ function pickRandom(arr: string[], n: number) {
 }
 
 export default function Home() {
-  const toolLogos = pickRandom(TOOL_LOGOS, 5);
+  const toolLogos = pickRandom(TOOL_LOGOS, 10);
   return (
     <section className="relative mt-32 w-full overflow-hidden border-b border-[#eee] py-12 md:h-[800px] lg:py-48">
       <div className="px-6">
@@ -222,9 +224,9 @@ export default function Home() {
                 <path d="M1030,550 L1028,350" stroke="url(#_r_j2_)" strokeWidth="1" fill="none" strokeLinecap="round" pathLength={1} strokeDashoffset="0px" strokeDasharray="1px 1px" />
               </svg>
 
-              {/* REST/WebSocket pill */}
-              <div className="absolute top-[735px] left-[calc(50%+320px)] z-20 rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
-                <span style={{ opacity: 1 }}>REST/WebSocket</span>
+              {/* AI Magic pill */}
+              <div className="absolute top-[735px] left-[calc(50%+335px)] z-20 rounded-full border border-[#E8A020] bg-white px-2 py-0.5 text-[10px] text-[#333] transition-all duration-500 ease-out">
+                <span style={{ opacity: 1 }}>Our AI magic</span>
               </div>
 
               {/* gRPC pill */}
