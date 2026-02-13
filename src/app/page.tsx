@@ -2,11 +2,13 @@
 import fs from "fs";
 import path from "path";
 
+export const dynamic = "force-dynamic";
+
 const logosDir = path.join(process.cwd(), "public", "logos");
 const ALL_TOOL_LOGOS = fs
   .readdirSync(logosDir)
   .filter((f) => /\.(svg|png)$/i.test(f))
-  .filter((f) => !/(white|dark|black|logo\.|aicrew)/i.test(f));
+  .filter((f) => !/(white|dark|black|logo\.|aicrew|imessage)/i.test(f));
 
 function pickRandom(arr: string[], n: number) {
   const shuffled = [...arr].sort(() => Math.random() - 0.5);
